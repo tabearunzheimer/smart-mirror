@@ -13,24 +13,29 @@
 
 ## Project Setup
 
-1. **Clone the Repository**:
+1. Clone the Repository:
 
    ```bash
-   git clone {{your-repository-url}}
+   git clone https://github.com/tabearunzheimer/smart-mirror.git
    cd smart-mirror
    ```
 
 2. Install Dependencies:
-Before running or building the app, install the required dependencies:
+   
+    Before running or building the app, install the required dependencies:
+
     ```bash
     npm install
     ```
 
 ## Running the App Locally
+
 To start the app locally during development (without Docker):
 
 1. Serve the Angular App:
-Use the Angular CLI to start the development server:
+
+    Use the Angular CLI to start the development server:
+
     ```bash 
     npm start
     ```

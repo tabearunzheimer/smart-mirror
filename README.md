@@ -28,11 +28,11 @@ This is just an estimate of the potential material costs. Many of these items ca
 
 2. **Prepare the Wooden Frame**
    
-    If you haven’t already, cut the additional piece of wood to match the dimensions of the picture frame. Once cut, smooth the edges by sanding them down, and paint the wood in a dark (preferably black) color for a sleek look. Let the paint dry thoroughly.
+    If you haven’t already, cut the additional piece of wood to match the dimensions of the picture frame. Once cut, smooth the edges by sanding them down, and paint the wood in a dark (preferably black) color so the one-way privacy film can work. Let the paint dry thoroughly.
 
 3. **Drill Holes for Assembly**
 
-    Drill four holes at the corners of the wooden piece as well as into the picture frame, ensuring they are equally spaced. These holes will allow you to attach the two parts securely and "close" the frame, with the black side facing inward.
+    Drill four holes at the corners of the wooden piece as well as into the picture frame, ensuring they are equally spaced. These holes will allow you to attach the two parts securely and "close" the frame, with the black side facing inward. Drill another hole to fit the charging cable through.
 
 4. **Reassemble the Frame**
 
@@ -48,7 +48,7 @@ This is just an estimate of the potential material costs. Many of these items ca
 
 7. **Optional Stabilization**
 
-    If there is extra space inside the frame and your device is able to move around, you can use small wooden pieces or 3D-printed parts to stabilize the device in place. You can find 3D print files for this in the REPLACE folder or modify them to fit your setup.
+    If there is extra space inside the frame and your device is able to move around, you can use small wooden pieces or 3D-printed parts to stabilize the device in place. You can find 3D print files for this in the TODO folder or modify them to fit your setup.
 
 8. **Secure the Frame**
 
@@ -71,9 +71,10 @@ This is just an estimate of the potential material costs. Many of these items ca
     > Note: I do not own or develop Wallpanel. This guide is based on v0.9.6 of Wallpanel, and future versions may differ slightly.
 
 3. **Configure Wallpanel**
+
 Open the Wallpanel app and navigate to the settings (bottom-right corner). Change the dashboard URL to the address of the website you deployed in Step 1.
 
-4. **Choose Your Smart Mirror Setup**
+1. **Choose Your Smart Mirror Setup**
 
     Decide how you want your smart mirror to behave:
 
