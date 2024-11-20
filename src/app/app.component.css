@@ -45,15 +45,16 @@
 }
 
 h1 {
-    font-size: 7vw;
+    font-size: 15vw;
 }
 
 h2 {
-    font-size: 3vw;
+    font-size: 5vw;
 }
 
 h3 {
-    font-size: 2vw;
+    margin: -1vw 0 -10vw 0;
+    font-size: 5vw;
 }
 
 i {
