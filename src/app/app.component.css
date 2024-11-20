@@ -1,0 +1,61 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.align-right {
+    text-align: right;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.weather-item {
+    text-align: center;
+}
+
+h1 {
+    font-size: 7vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+i {
+    padding-right: 20px;
+}
