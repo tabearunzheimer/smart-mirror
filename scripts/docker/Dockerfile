@@ -14,7 +14,7 @@ RUN npm run build --prod
 # stage 2
 FROM nginx:alpine
 
-COPY --from=build /app/dist/smart-mirror /usr/share/nginx/html
+COPY --from=build /app/dist/smart-mirror/browser /usr/share/nginx/html
 
 EXPOSE 80
 
