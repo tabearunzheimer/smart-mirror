@@ -1,7 +1,7 @@
-# SmartMirror
+# Smart Mirror Website
 
 ## Table of Contents
-- [SmartMirror](#smartmirror)
+- [Smart Mirror Website](#smart-mirror-website)
   - [Table of Contents](#table-of-contents)
   - [Project Setup](#project-setup)
   - [Running the App Locally](#running-the-app-locally)
@@ -50,7 +50,7 @@ To build the Docker image for production:
     ```bash
     npm run docker-build
     ```
-    This will use the `Dockerfile` in the `scripts/docker/` directory to build the image and tag it as your-angular-app.
+    This will use the `Dockerfile` in the `scripts/docker/` directory to build the image and tag it as tabea-runzheimer/smart-mirror.
 
 1. Build the Docker Image (using Docker Compose):
 
@@ -68,7 +68,7 @@ Once the Docker image is built, you can run it with Docker:
     ```bash
     npm run docker-run
     ```
-    This will start the container and map port 80 inside the container to port 8080 on your local machine. You can access the app at http://localhost:8080.
+    This will start the container and map port 80 inside the container to port 8080 on your local machine. You can access the app at http://localhost:8080. 
 
 2. Access the App:
 
@@ -83,7 +83,7 @@ Docker Compose allows you to run multiple services in one command (e.g., for API
     ```bash
     npm run docker-compose-up
     ```
-    This will build and start all the services defined in docker-compose.yml (located in scripts/docker/).
+    This will build and start all the services defined in `docker-compose.yml` (located in `scripts/docker/`). Make sure to set the environment variables according to your broker. 
 
 2. Stop and Remove Containers:
 
@@ -96,7 +96,7 @@ Docker Compose allows you to run multiple services in one command (e.g., for API
 Here's an overview of the project structure:
 
 ```
-your-angular-app/
+tabea-runzheimer/smart-mirror/
 ├── src/
 ├── dist/
 ├── angular.json

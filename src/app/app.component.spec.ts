@@ -1,10 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { MQTT_SERVICE_OPTIONS, MqttModule } from 'ngx-mqtt';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [
+        AppComponent,
+        MqttModule.forRoot(MQTT_SERVICE_OPTIONS)
+      ],
+      providers: [
+        MqttModule
+      ]
     }).compileComponents();
   });
 

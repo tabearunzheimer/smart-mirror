@@ -15,6 +15,7 @@ export class WeatherService {
     'schnee': 'fas fa-snowflake',
     'nebel': 'fas fa-smog',
     'gewitter': 'fas fa-bolt',
+    'wolkig': 'fas fa-cloud',
   };
 
   constructor() {}

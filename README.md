@@ -7,19 +7,22 @@ This project aims to create a cost-effective smart mirror that displays useful i
 - **Smart Mirror Functionality**: The mirror displays useful data on top of the reflective surface, turning any room into a functional and stylish smart hub.
 
 ## Materials
-| **Item**                                             | **Description**                                         | **Amount** | **Requirement**  | **Estimated Cost**  |
-|------------------------------------------------------|---------------------------------------------------------|------------|------------------|---------------------|
-| Tablet or Smartphone                                 | Acting as the display for the smart mirror. Most people have one lying around or you can buy refurbished.            | 1          | Needed           | Varies (e.g., 0-200€) |
-| Picture frame                                        | To house the tablet/smartphone                          | 1          | Needed           | <10€             |
-| One-way privacy film for windows                     | To turn the glass into a reflective mirror surface      | 1          | Needed           | <10€            |
-| M2 screws                                         | For mounting and securing the frame                     | 4          | Needed           | 1-3€               |
-| Charging cable                                       | To power the device                                     | 1          | Needed           | 3-10€              |
-| Additional piece of wood                             | Cut to the size of the picture frame                    | 1          | Needed           | <10€              |
-| Black paint                                          | To paint the additional piece of wood if it has a light color | 1          | Optional         | 5-10€              |
-| Frosted privacy film for windows                     | For enhanced privacy or aesthetics                      | 1          | Optional         | <10€             |
-| Smart Plug                                           | For intelligent charging control                        | 1          | Optional         | 10-30€             |
+| **Item**                         | **Description**                                                                                           | **Amount** | **Requirement** | **Estimated Cost**    |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------- | --------------- | --------------------- |
+| Tablet or Smartphone             | Acting as the display for the smart mirror. Most people have one lying around or you can buy refurbished. | 1          | Needed          | Varies (e.g., 0-200€) |
+| Picture frame                    | To house the tablet/smartphone                                                                            | 1          | Needed          | <10€                  |
+| One-way privacy film for windows | To turn the glass into a reflective mirror surface                                                        | 1          | Needed          | <10€                  |
+| M2/M3 screws                     | For mounting and securing the frame. Pick the screw size according to the size of the frame borders       | 4          | Needed          | 1-3€                  |
+| Charging cable                   | To power the device                                                                                       | 1          | Needed          | 3-10€                 |
+| Additional piece of wood         | Cut to the size of the picture frame                                                                      | 1          | Needed          | <10€                  |
+| Black paint                      | To paint the additional piece of wood if it has a light color                                             | 1          | Optional        | 5-10€                 |
+| Frosted privacy film for windows | For enhanced privacy or aesthetics                                                                        | 1          | Optional        | <10€                  |
+| Smart Plug                       | For intelligent charging control                                                                          | 1          | Optional        | 10-30€                |
 
 This is just an estimate of the potential material costs. Many of these items can be sourced from spare parts. For example, I used an old tablet that I wasn't using anymore, and with the smart plug, my total costs came to less than 40€.
+
+## Prerequisites 
+- Running MQTT Broker
 
 ## Hardware Setup
 1. **Prepare the Glass**
@@ -74,7 +77,7 @@ This is just an estimate of the potential material costs. Many of these items ca
 
 Open the Wallpanel app and navigate to the settings (bottom-right corner). Change the dashboard URL to the address of the website you deployed in Step 1.
 
-1. **Choose Your Smart Mirror Setup**
+4. **Choose Your Smart Mirror Setup**
 
     Decide how you want your smart mirror to behave:
 
@@ -82,3 +85,26 @@ Open the Wallpanel app and navigate to the settings (bottom-right corner). Chang
 
    - **Always-On Display**: If you prefer the mirror to stay on at all times, simply enable the "Stay On" option in Wallpanel settings, bypassing the motion detection feature.
 
+5. Fetch Weather Data
+
+    Download the shell script located at `scripts/weather-today.sh`. This script retrieves weather data from the German weather provider wetter.com and uses regex to extract today's forecast.
+
+    To use the same provider:
+
+    1. Visit wetter.com and search for the desired location.
+    2. Copy the URL of the location's weather page and replace the default URL in the script.
+    3. Update the MQTT broker details in the script to match your setup.
+   
+   If you're using different provider you'll probably have to adapt the script. Ensure all changes are saved before running a test with:
+   ```bash
+   sh weather-today.sh
+   ```
+   > Note: Make sure you have an mqtt publisher available (e.g [mosquitto](https://mosquitto.org/)) and to set the environment variables to the websocket listener. 
+
+6. Update Weather Data
+
+    To continuously update the weather data, you can set up a cron job to execute the shell script at regular intervals, such as every 15 minutes:
+    ```bash
+    0,15,30,45 * * * *    pi   /etc/cron.d/weather-today.sh 
+    ``` 
+    Ensure the shell script is placed in the `cron.d` directory and has executable permissions. Adjust the timing or file paths as needed for your specific setup.
