@@ -1,10 +1,26 @@
 # Smart Mirror (on a budget)
-This project aims to create a cost-effective smart mirror that displays useful information, such as weather data. It utilizes an old tablet or smartphone, combined with simple hardware materials, to create a sleek, modern smart mirror for your home.
+
+<div style="display: flex; width: 100%; align-items: center;">
+  <!-- Text on the Left -->
+  <div style="flex: 1; padding-right: 20px;">
+    <p>
+      This project aims to create a cost-effective smart mirror that displays useful information, such as weather data. It utilizes an old tablet or smartphone, combined with simple hardware materials, to create a sleek, modern smart mirror for your home.
+    </p>
+  </div>
+  <!-- Image on the Right -->
+  <div style="flex: 1; display: flex; justify-content: flex-end;">
+    <img src="./assets/img/smart-mirror-demo.jpg" style="width: 50%; max-width: 100%;" />
+  </div>
+</div>
+
+
 
 ## Key Features
 - **Weather Display**: Real-time weather information, including temperature, humidity, and forecasts.
 - **Time and Date**: Display the current time and date with a customizable format.
 - **Smart Mirror Functionality**: The mirror displays useful data on top of the reflective surface, turning any room into a functional and stylish smart hub.
+
+
 
 ## Materials
 | **Item**                         | **Description**                                                                                           | **Amount** | **Requirement** | **Estimated Cost**    |
@@ -51,7 +67,7 @@ This is just an estimate of the potential material costs. Many of these items ca
 
 7. **Optional Stabilization**
 
-    If there is extra space inside the frame and your device is able to move around, you can use small wooden pieces or 3D-printed parts to stabilize the device in place. You can find 3D print files for this in the TODO folder or modify them to fit your setup.
+    If there is extra space inside the frame and your device is able to move around, you can use small wooden pieces or 3D-printed parts to stabilize the device in place. You can find 3D print files for this in the `assets/models` folder or modify them to fit your setup.
 
 8. **Secure the Frame**
 
@@ -60,6 +76,11 @@ This is just an estimate of the potential material costs. Many of these items ca
 9. **Enjoy Your Smart Mirror**
 
     Your smart mirror is now ready for use! Have fun and enjoy your new, high-tech addition to your space.
+
+<p align="center">
+<img src="./assets/img/smart-mirror-assembly.jpg" style="width: 40%;"/>
+<img src="./assets/img/smart-mirror-back-assembled.jpg" style="width: 40%; margin-left: 20px;"/>
+</p>
 
 ## Software Installation & Setup
 
