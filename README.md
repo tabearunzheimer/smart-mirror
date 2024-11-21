@@ -71,7 +71,7 @@ This is just an estimate of the potential material costs. Many of these items ca
 
     Download and install the [Wallpanel](https://play.google.com/store/apps/details?id=xyz.wallpanel.app&hl=de&pli=1) app on your smartphone or tablet.
 
-    > Note: I do not own or develop Wallpanel. This guide is based on v0.9.6 of Wallpanel, and future versions may differ slightly.
+    > Note: I do not own or develop Wallpanel. This guide is based on v0.12.0 of Wallpanel, and future versions may differ slightly.
 
 3. **Configure Wallpanel**
 
@@ -81,7 +81,7 @@ Open the Wallpanel app and navigate to the settings (bottom-right corner). Chang
 
     Decide how you want your smart mirror to behave:
 
-   - **Motion-Activated Display**: If you’d like the smart mirror to turn on automatically when someone walks in front of it, enable the camera in Wallpanel settings under “Camera Settings.” Then, go to “Motion Detection” and enable it, along with the “Wake Screen” option. To ensure privacy, I recommend covering the camera with a small piece of frosted privacy film.
+   - **Motion-Activated Display**: If you’d like the smart mirror to turn on automatically when someone walks in front of it, enable the camera in Wallpanel settings under “Camera Settings” and switch to the front camera. Then, go to “Motion Detection” and enable it, along with the “Wake Screen” option. To ensure privacy, I recommend covering the camera with a small piece of frosted privacy film.
 
    - **Always-On Display**: If you prefer the mirror to stay on at all times, simply enable the "Stay On" option in Wallpanel settings, bypassing the motion detection feature.
 
