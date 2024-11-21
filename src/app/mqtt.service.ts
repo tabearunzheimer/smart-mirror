@@ -28,13 +28,13 @@ export class MqttService {
 
     
     this.mqttService.onConnect.subscribe(() => {
-      console.log('Connected to MQTT broker');
+      console.info('Connected to MQTT broker');
       this.subscribeToTopic();
     });
 
     
     this.mqttService.observe(mqttConfig.topic).subscribe((message: IMqttMessage) => {
-      console.log(`Received message: ${message.payload.toString()}`);
+      console.info(`Received message: ${message.payload.toString()}`);
       this.messageSubject.next(message.payload.toString());
     });
   }
@@ -43,7 +43,7 @@ export class MqttService {
   private subscribeToTopic(): void {
     const mqttTopic = environment.mqtt.topic;
     this.mqttService.observe(mqttTopic).subscribe((message: IMqttMessage) => {
-      console.log(`Subscribed to topic ${mqttTopic}: ${message.payload.toString()}`);
+      console.info(`Subscribed to topic ${mqttTopic}: ${message.payload.toString()}`);
     });
   }
 
@@ -55,6 +55,6 @@ export class MqttService {
   
   disconnect() {
     this.mqttService.disconnect();
-    console.log('Disconnected from MQTT broker');
+    console.info('Disconnected from MQTT broker');
   }
 }

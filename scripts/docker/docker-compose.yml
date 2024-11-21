@@ -2,12 +2,12 @@ version: '3.8'
 
 services:
   angular-app:
-    image: tabea-runzheimer/smart-mirror:1.0.0
+    image: tabea-runzheimer/smart-mirror:1.0.1
     #build: ../../
     ports:
       - "8080:80"
     environment:
-      locale: 'de-DE'
+      LOCALE: 'de-DE'
       MQTT_TOPIC: ""
       MQTT_HOST: ""
       MQTT_USER: ""

@@ -1,12 +1,11 @@
 export const environment = {
-    production: false,
-    locale: 'de-DE', 
-    mqtt: {
-      topic: 'home/temperature',
-      host: 'ws://broker.hivemq.com:8000/mqtt', 
-      user: 'yourUsername',  
-      password: 'yourPassword',  
-      port: 8000,  
-    }
-  };
-  
+  production: false,
+  locale: window.env.LOCALE, 
+  mqtt: {
+    topic: window.env.MQTT_TOPIC,
+    host: window.env.MQTT_HOST, 
+    user: window.env.MQTT_USER,  
+    password: window.env.MQTT_PASSWORD,  
+    port: window.env.MQTT_PORT,  
+  }
+};

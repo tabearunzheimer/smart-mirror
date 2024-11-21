@@ -1,14 +1,14 @@
 {
   "name": "smart-mirror",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "docker-build": "docker build -f ./scripts/docker/Dockerfile -t tabea-runzheimer/smart-mirror:1.0.0 .",
-    "docker-run": "docker run -p 8080:80 tabea-runzheimer/smart-mirror:1.0.0",
+    "docker-build": "docker build -f ./scripts/docker/Dockerfile -t tabea-runzheimer/smart-mirror:1.0.1 .",
+    "docker-run": "docker run -p 8080:80 tabea-runzheimer/smart-mirror:1.0.1",
     "docker-compose-up": "docker-compose -f ./scripts/docker/docker-compose.yml up --build",
     "docker-compose-down": "docker-compose -f ./scripts/docker/docker-compose.yml down"
   },
