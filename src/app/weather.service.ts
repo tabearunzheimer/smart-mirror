@@ -8,6 +8,7 @@ export class WeatherService {
     'bedeckt': 'fas fa-cloud',
     'leicht bewölkt': 'fas fa-cloud-sun',
     'sonne': 'fas fa-sun',
+    'sonnig': 'fas fa-sun',
     'bewölkt': 'fas fa-cloud',
     'wechselhaft': 'fa fa-cloud-sun-rain',
     'leichter regen': 'fa fa-cloud-rain',
